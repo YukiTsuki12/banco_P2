@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'autenticacao/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Listar Carros</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Listar Carros</h2>
+        <ul>
+            {% for carro in carros %}
+            <li>{{ carro.marca }} {{ carro.modelo }} ({{ carro.ano }})
+                <a href="{% url 'editar_carro' pk=carro.pk %}">Editar</a> |
+                <a href="{% url 'deletar_carro' pk=carro.pk %}">Excluir</a>
+            </li>
+            {% empty %}
+            <li>Nenhum carro encontrado.</li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'criar_carro' %}" class="btn btn-primary">Adicionar Novo Carro<br><br></a>
+        <a href="/formulario/">Voltar ao Inicio do Formulario</a>
+    </div>
+</body>
+</html>

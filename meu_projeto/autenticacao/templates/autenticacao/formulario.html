@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'autenticacao/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Formulario Principal</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario Principal</h2>
+        <p>Selecione uma operacao:</p>
+        <ul>
+            <li><a href="{% url 'listar_carros' %}">Listar Carros</a></li>
+            <li><a href="{% url 'criar_carro' %}">Adicionar Novo Carro</a></li>
+        </ul>
+        <p><a href="{% url 'chat' %}" class="btn btn-primary" target="_blank">Abrir Chat</a></p>
+    </div>
+</body>
+</html>
