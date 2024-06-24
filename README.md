@@ -8,7 +8,7 @@ CRUD (Create, Read, Update, Delete):
 Integração de Camadas:
   * CRUD (python)
 
-Link do vídeo: [Meu vídeo](fazendo ainda)
+Link do vídeo: [Meu vídeo](https://youtu.be/9Ru-SOabMz8)
 
 
 ## Dependências:
