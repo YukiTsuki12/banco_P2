@@ -20,6 +20,9 @@ Link do vídeo: [Meu vídeo](https://youtu.be/9Ru-SOabMz8)
 * Django
 * Jinja2
 
+### Redis
+![image](https://github.com/YukiTsuki12/banco_P2/assets/126576810/2d03fba4-725d-4a09-b9ef-4fbe550cdf21)
+
 
 ### Funcionalidades:
 
